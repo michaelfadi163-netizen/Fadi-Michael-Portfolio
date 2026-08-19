@@ -69,8 +69,20 @@
     justify-content: space-between;
     padding: 1rem var(--pad);
     background: color-mix(in srgb, var(--paper) 85%, transparent);
-    backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--line);
+  }
+
+  /* Blur lives on a pseudo-element instead of directly on .site-header,
+     because backdrop-filter on the header would turn it into the
+     positioning anchor for any position:fixed element inside it
+     (like the mobile nav), breaking full-screen overlays. */
+  .site-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: -1;
   }
   
   .logo {
