@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Designs — Fadi Michael</title>
+  <meta name="description" content="Case study: Designs — by Fadi Michael." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="project-six">
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <a class="logo" href="index.html">FM<span class="logo-dot">.</span></a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <div class="nav-item">
+        <a href="index.html#work">Work</a>
+        <div class="nav-menu">
+          <a href="project-one.html">Branding</a>
+          <a href="project-two.html">Graduation</a>
+          <a href="project-three.html">Portraits</a>
+          <a href="project-four.html">EMU Soccer Club</a>
+          <a href="project-five.html">Rhythm &amp; Vinyl</a>
+          <a href="project-six.html">Designs</a>
+          <a href="project-seven.html">Street Photography</a>
+          <a href="project-eight.html">Product Photography</a>
+        </div>
+      </div>
+      <a href="index.html#about">About</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#contact" class="nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- ============ PROJECT HERO (animates on load) ============ -->
+    <section class="project-hero">
+      <a class="back-link mono ph-rise" href="index.html#work">← All work</a>
+      <h1 class="project-title ph-rise">Designs</h1>
+      <p class="project-intro ph-rise">
+        <!-- TODO: replace with the real intro for this project -->
+        A collection of graphic design projects created across branding, marketing, and digital media.
+      </p>
+
+      <ul class="project-meta mono ph-rise">
+        <li><span>Role</span>Design</li>
+        <li><span>Year</span>2026</li>
+        <li><span>Type</span>Client work</li>
+      </ul>
+    </section>
+
+    <!-- ============ IMAGE DECK ============ -->
+    <!-- Add or remove .deck-card images freely — the deck adapts. -->
+    <section class="deck-section">
+      <div class="deck" aria-label="Project image gallery">
+        <img class="deck-card" src="images/project-six/02.png" alt="Describe image 2" />
+        <img class="deck-card" src="images/project-six/03.png" alt="Describe image 3" />
+        <img class="deck-card" src="images/project-six/04.png" alt="Describe image 4" />
+        <img class="deck-card" src="images/project-six/06.jpg" alt="Describe image 6" />
+        <img class="deck-card" src="images/project-six/07.png" alt="Describe image 7" />
+      </div>
+
+      <div class="deck-controls">
+        <button class="deck-btn" data-dir="-1" aria-label="Previous image">←</button>
+        <span class="deck-count mono">1 / 4</span>
+        <button class="deck-btn" data-dir="1" aria-label="Next image">→</button>
+      </div>
+      <p class="deck-hint mono">Click an image to view full screen</p>
+    </section>
+
+    <!-- ============ STORY ============ -->
+    <section class="project-story">
+      <p>
+      </p>
+    </section>
+
+    <!-- ============ VIDEO (optional — delete if not needed) ============ -->
+    <!--
+    <section class="project-video">
+      <video controls preload="metadata" playsinline>
+        <source src="images/project-six/reel.mp4" type="video/mp4" />
+      </video>
+    </section>
+    -->
+
+    <!-- ============ NEXT PROJECT ============ -->
+    <section class="project-next">
+      <p class="mono">Next project</p>
+      <a class="next-link" href="project-seven.html">Street Photography →</a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer mono">
+    <p>© <span id="year"></span> Fadi Michael</p>
+    <p>Built by hand, with care.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
